@@ -5,3 +5,9 @@ all:
 
 clean:
 	rm -f eliamenisch-admincp-finder *.o
+
+install: all
+	install -C -m 755 eliamenisch-admincp-finder /usr/bin/eliamenisch-admincp-finder
+
+uninstall:
+	rm /usr/bin/eliamenisch-admincp-finder
