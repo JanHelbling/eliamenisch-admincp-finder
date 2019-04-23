@@ -44,6 +44,7 @@ int main(int argc,char *argv[]){
     
 	while(paths[cnt] != NULL){
         for(pc = 0;pc != threadcount;pc++){
+	    if(paths[cnt] != NULL){
             sprintf(newurl,"%s%s",url,paths[cnt++]);
             pids[pc] = fork();
             if(!pids[pc]){
@@ -60,6 +61,7 @@ int main(int argc,char *argv[]){
 	        	}
                 exit(0);
 	        }
+             }
             
         }
         for(pc=0;pc != threadcount;pc++){
