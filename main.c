@@ -51,7 +51,7 @@ int main(int argc,char *argv[]){
 		        if(code == 200){
 			        printf("!!! [Found] !!! -> %s\n",newurl);
                     int c;
-                    for(c=0;c!=10;c++){
+                    for(c=0;c!=threadcount;c++){
                         kill(pids[c],SIGKILL);
                     }
 		            exit(0);
