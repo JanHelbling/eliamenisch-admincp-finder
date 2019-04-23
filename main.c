@@ -13,7 +13,7 @@ int main(int argc,char *argv[]){
 	while((opt = getopt(argc,argv,"hu:t:")) != EOF){
 		switch(opt){
 			case 'h':
-				printf("Usage: admincp-finder -t threads -u URL\n");
+				printf("Usage: eliamenisch-admincp-finder -t threads -u URL\n");
 				return 0;
 			case 'u':
 				memcpy(url,optarg,256);
