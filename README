@@ -16,3 +16,4 @@ eliamenisch-admincp-finder
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
     eliamenisch-admincp-finder is a very fast admincp-finder tool, written in C.
+    You need to install https://github.com/JanHelbling/libmicrohttp.git
