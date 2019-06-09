@@ -53,7 +53,7 @@ int main(int argc,char *argv[]){
 			        printf("!!! [Found] !!! -> %s\n",newurl);
                     int c;
                     for(c=0;c!=threadcount;c++){
-                        kill(pids[c],SIGKILL);
+                        kill(pids[c],SIGTERM);
                     }
 		            exit(0);
 		        } else {
