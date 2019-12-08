@@ -1,6 +1,6 @@
 all:
 	gcc -c wordlist.c -Ofast
-	gcc -Ofast main.c -lssl -lcrypto -lmicrohttp wordlist.o -o eliamenisch-admincp-finder
+	gcc -Ofast main.c -lmicrohttp -lssl -lcrypto wordlist.o -o eliamenisch-admincp-finder
 	strip eliamenisch-admincp-finder
 
 clean:
